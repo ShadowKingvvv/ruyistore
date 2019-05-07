@@ -1,0 +1,142 @@
+page{
+  height: 100%;
+}
+.mainview{
+  background-color: #EFF7F4;
+  color:#EFF7F4;
+  padding-top:20px;
+}
+.content{
+  background-color: #FFFFFF;
+  padding-top:20px;
+}
+.toplabel{
+  padding-left: 15px; 
+  color: #233C33;
+  font-size: 16px;
+}
+.from{
+  margin-left:15px;
+  margin-right:24px;
+  margin-top:20px;
+}
+.information{
+  color:#5A7067;
+  font-size: 14px;
+  line-height: 20px;
+}
+.module{
+  padding-top:26px;
+  padding-bottom:26px;
+
+}
+.contentcontent{
+  flex-direction:row;
+  display: flex;
+}
+.label_icon {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  background: #FFFFFF;
+  border-radius: 50px;
+  border: 2px #A8EAD1 solid;
+}
+.label_icon-checked {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 12px;
+  height: 12px;
+  background: #00C177;
+  border-radius: 50%;
+}
+.labeli{
+  color: #00C177;
+  font-size: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right:10px;
+  margin-left:3px;
+}
+.textlabel{
+  color: #5A7067;
+  font-size:16px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.textcont{
+  color: #5A7067;
+  font-size: 14px;
+}
+.label_icon-unchecked {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right:10px;
+  margin-left:3px;
+  width: 12px;
+  height: 12px;
+  border: 1px #D4D7D6 solid;
+  border-radius: 50%;
+}
+.tr{
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.td1{
+  width: 40%;
+  text-align: left;
+}
+.td2{
+  width: 60%;
+  text-align: left;
+  line-height:25px;
+
+}
+.line-gary{
+  padding-top: 23px;
+  margin-left: 10px;
+  padding-bottom: 23px;
+  border-left: 1px solid #D4D7D6;
+}
+.line-green{
+  padding-top: 23px;
+  margin-left: 10px;
+  padding-bottom: 23px;
+  border-left: 1px solid #00C177;
+}
+.btn{
+  background-color:#00C177 !important;
+  margin-left:15px;
+  margin-right:15px;
+  height:40px;
+  line-height:40px;
+  border-radius:20px;
+  font-size:16px;
+  margin-top:24px;
+  color:#FFFFFF;
+}.canvas{
+  width: 40px; 
+  height:230px;
+  margin-top: 20px;
+}.line{
+  line-height: 42px;
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+}.phone{
+  color: green;
+  line-height: 120px;
+}.phoneNum{
+  color: grey;
+}.indeinty{
+  color: green;
+  line-height: 140px;
+}.indeintyy{
+  color: grey;
+}

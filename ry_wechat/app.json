@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/guideline/guideline",
+    "pages/user/user",
+    "pages/verify/verify",
+    "pages/news/news",
+    "pages/authority/authority",
+    "pages/payOrder/payOrder",
+    "pages/goods/goods"
+  ],
+  "window": {
+    "backgroundcolor":"#fafafa",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fafafa",
+    "navigationBarTitleText": "如意商城",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh":false
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "resources/image/home.png",
+        "selectedIconPath": "resources/image/home1.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/goods/goods",
+        "iconPath": "resources/image/cart.png",
+        "selectedIconPath": "resources/image/cart1.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "resources/image/me.png",
+        "selectedIconPath": "resources/image/me.png",
+        "text": "我的"
+      }
+    ],
+    "color": "#b3b3b3",
+    "selectedColor": "#97845e",
+    "backgroundColor": "#ffffff",
+    "position": "bottom",
+    "borderStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
+}

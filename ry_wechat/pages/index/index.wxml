@@ -1,0 +1,102 @@
+<!--index.wxml-->
+<import src="../../template/template.wxml"/>
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}"/>
+<view class="mainview">
+  <view>
+    <image class='hospitalimg' src='../../resources/images/hospitalimg.jpg'></image>
+    <view class='navigation'>
+     <view bindtap='goHospitalIntroduce' class='hospital_introduce'>
+      <image class='introduceimg' src='../../resources/images/introduce.png'></image>
+     <text class='text dip_block'>医院简介</text>
+     </view>
+     <view bindtap='goHospitalNavigation' class='hospital_navigation'>
+      <image class='navigationimg' src='../../resources/images/navigation.png'></image>
+       <text class='text dip_block'>医院导航</text>
+     </view>
+     <view bindtap='goHospitalGuideline' class='guideline'>
+       <image class='guidelineimg' src='../../resources/images/guideline.png'></image>
+       <text class='text dip_block'>就诊指引</text>
+     </view>
+     <view bindtap='selectHospitalDept' class='dept'>
+       <image class='introduceimg' src='../../resources/images/dept.png'></image>
+       <text class='text dip_block'>特色科室</text>
+     </view>
+    </view>
+  </view>
+  <view class='clinic_business'>
+    <view class='clinic_head border-b'>
+      <view class='clinic_image'>
+        <image class='clinicServiceimg' src='../../resources/images/clinicService.png'></image>
+      </view>
+        <view class='clinic_text'>
+          <text class='clinic_service'>门诊业务</text>
+        </view>
+    </view>
+    <view bindtap="appointRegister" class='clinic_layout border-b'>
+      <view class='image_layout'>
+        <image class='imageType' src='../../resources/images/register.png'></image>
+      </view>
+      <view class='text_layout'>
+        <text class='text_head'>预约挂号</text>
+        <text class='text_content'>提前在线预约挂号</text>
+      </view>
+    </view>
+    <view bindtap="selectHospitalTap" class='clinic_layout border-b'>
+      <view class='image_layout'>
+        <image class='imageType' src='../../resources/images/queue.png'></image>
+      </view>
+      <view class='text_layout'>
+        <text class='text_head'>排队叫号</text>
+        <text class='text_content'>实时查询门诊叫号</text>
+      </view>
+     </view>
+      <view bindtap="selectHospitalTap" class='clinic_layout border-b'>
+        <view class='image_layout'>
+          <image class='imageType' src='../../resources/images/visitCard.png'></image>
+        </view>
+        <view class='text_layout'>
+          <text class='text_head'>就诊卡充值</text>
+          <text class='text_content'>随时随地在线就诊卡充值</text>
+        </view>
+     </view>
+      <view bindtap="selectHospitalTap" class='clinic_layout'>
+        <view class='image_layout'>
+          <image class='imageType' src='../../resources/images/clinic.png'></image>
+        </view>
+        <view class='text_layout'>
+          <text class='text_head'>门诊缴费</text>
+          <text class='text_content'>在线缴纳门诊医药费，检查费</text>
+        </view>
+     </view>
+  </view>
+  <view class='hospitalization'>
+    <view class='hospitalization_head border-b'>
+      <view class='hospitalization_image'>
+        <image class='hopital_service' src='../../resources/images/hospitalization.png'></image>
+      </view>
+      <view class='hospitalization_text'>
+        <text class='hospitalization_dic'>住院业务</text>
+      </view>
+    </view>
+    <view bindtap="selectHospitalTap" class='hospitalization_layout border-b'>
+      <view class='image_layout'>
+        <image class='imageType' src='../../resources/images/reportCard.png'></image>
+      </view>
+      <view class='text_layout'>
+       <text class='text_head'>报告单查询</text>
+       <text class='text_content'>实时查看检查检验单</text>
+       </view>
+    </view>
+    <view bindtap="selectHospitalTap" class='hospitalization_layout'>
+      <view class='image_layout'>
+        <image class='imageType' src='../../resources/images/inHospital.png'></image>
+      </view>
+      <view class='text_layout'>
+        <text class='text_head'>住院缴费</text>
+         <text class='text_content'>查看住院费用结算及预交金充值</text>
+      </view>
+    </view>
+  </view>
+  <view class='height_10 bag-main'>
+  </view>
+</view>

@@ -1,0 +1,160 @@
+/* pages/user/user.wxss */
+.mainview{
+  background:#EDF0F7;
+  max-width: 100vm;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+.user_ground{
+  width: 100%;
+  height: 260rpx;
+  background-color: #00C177;
+  margin-bottom:200rpx;
+}
+.user_service{
+  width: 100%;
+  height: 514rpx;
+  background-color: #ffffff;
+}
+.service_layout{
+  height: 100rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 40rpx;
+}
+.service_layout_img{
+  margin-top:12rpx;
+  font-size:44rpx;
+}
+.userimg{
+  height: 38rpx;
+  width: 48rpx;
+}
+.service_text{
+  width: 100%;
+  margin-left: 40rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: rows;
+  flex-wrap: wrap;
+  align-items: center;
+  /* line-height: 100%; */
+}
+.border-b{
+    border-bottom: solid thin #e0e5e0;
+}
+.text_style{
+  font-size: 32rpx;
+  color: #0B1611;
+  height: 32rpx;
+}
+.patient_info{
+  margin-left:4%;
+  margin-right:4%;
+  background-color:#F8F8F8;
+  position:absolute;
+  width:92%;
+  top:100rpx;
+  border-radius:12rpx;
+}
+.user_photo{
+  height:140rpx;
+  width:140rpx;
+  margin-top:10rpx;
+  border-radius:50%;
+}
+.user_photo_border{
+  height:160rpx;
+  width:160rpx;
+  position:absolute;
+  top:20rpx;
+  margin-left:39%;
+  z-index:2;
+  background:#ffffff;
+  border-radius:100%;
+  text-align:center;
+  justify-content:center;
+
+}
+.user_info{
+  display: flex;
+  color:#56A380;
+  background-color: #EFF9F5;
+  height: 80rpx;
+  align-items: center;
+  border-bottom-left-radius:12rpx;
+  border-bottom-right-radius:12rpx;
+}
+.info_layout{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  border-right: solid 2rpx #e0e5e0;
+}
+.doctor_layout{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.info_text{
+  margin-left: 16rpx;
+  font-size: 28rpx;
+}
+.unreal_name{
+  font-size: 32rpx;
+}
+.text_layout {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  background:#ffffff;
+  border-top-left-radius:12rpx;
+  border-top-right-radius:12rpx;
+}
+.real_layout{
+  width: 210rpx;
+  height: 56rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #EFF9F5;
+  border-radius: 30rpx;
+  margin-bottom: 30rpx;
+}
+.real_name{
+  color: #00C177;
+  font-size: 28rpx;
+}
+.unpatient_into{
+  display:flex;
+  margin-top:90rpx;
+  margin-bottom: 20rpx;
+  text-align:center;
+}
+.patient_into{
+  margin-top:90rpx;
+  margin-bottom: 20rpx;
+  text-align:center;
+}
+.switch_user{
+  position:absolute;
+  right:0;
+  top:92rpx;
+  font-size:26rpx;
+  color: #00C177;
+  padding:10rpx 20rpx;
+  background:#E0FBF1;
+  border-top-left-radius: 32rpx;
+  border-bottom-left-radius: 32rpx;
+}
+.patient_name{
+  color: #0B1611;
+  font-size: 40rpx;
+  margin-bottom: 12rpx
+}
+.patient_text{
+  font-size: 28rpx;
+  color: #99A6A0;
+  margin-top:10rpx;
+}

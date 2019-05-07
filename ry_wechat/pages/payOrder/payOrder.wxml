@@ -1,0 +1,37 @@
+<!--pages/payOrder/payOrder.wxml-->
+<view class='bg-app heght-100-v f14 pad-t-10 height_100'>
+  <view class='qy-bg-white mar_t_5 bor-ra4 border_green'>
+    <view class='pad-lr-14'>
+      <view class='w-100 line_h_44 border-b'>
+        <text class='qy-bluegreen min_width'>订单编号</text>
+        <text class='mar_l_34 qy-black1'>{{payData.TRADE_NO}}</text>
+      </view>
+      <view class='w-100 line_h_44 border-b'>
+        <text class='qy-bluegreen min_width'>订单名称</text>
+        <text class='mar_l_34 qy-black1'>{{payData.MARK_DESC}}</text>
+      </view>
+      <view class='w-100   pad-tb-10 flex border-b-dash'>
+        <view class='qy-bluegreen min_width'>订单描述</view>
+        <view class='mar_l_34 qy-black1'>{{payData.MARK_DETAIL}}</view>
+      </view>
+    </view>
+    <view class='flex pos_f'>
+      <view class='left_circle'></view>
+      <view class='right_circle'></view>
+    </view>
+    <view class='linh_65 pad-lr-14 f12'>
+      <text class='qy-bluegreen min_width'>支付金额</text>
+      <text class='mar_l_34 qy_green1 f16'>¥{{payData.AMOUNT}}</text>
+    </view>
+  </view>
+  <view class='pad-lr-14 qy-bg-white flex pay_height' wx:if="{{showPaytype!=''}}">
+    <view class='icon-weixin_pay qy_green1 f20 pad-l-20'></view>
+    <view class='qy-black1 f14 w-100 pad-l-10'>微信支付</view>
+    <view class='icon-choose qy_green1 f20 pad-r-20'></view>
+  </view>
+  <view class='pos-f bottom_14'>
+    <view class='pad-lr-20' style="width:{{windowWidth}}px;">
+      <button class='button-size-l' bindtap='goToPay'>支付</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,15 @@
+<!--pages/verify/verify.wxml-->
+<view class='verifymainview'>
+  <view class='authorization_info'>
+    <view>
+      <text class='base_info'>确认授权以获取基本信息</text>
+    </view>
+    <view>
+      <text class='query_dic'>查询报告单信息需要提供你的姓名、手机号码、身份证号等基本信息，通过以下授权步骤可快速获取基本信息。</text>
+    </view>
+    <view></view>
+  </view>
+  <view class='authorization_phone'>
+    <text class='phone_text'>授权手机号码</text>
+  </view>
+</view>

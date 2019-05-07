@@ -1,0 +1,26 @@
+<!--pages/guideline/guideline.wxml-->
+<view>
+  <view class='dept_search'>
+    <input class='search_name' placeholder='科室名称/简拼'></input>
+  </view>
+  <view>
+    <image class='hospitalPhoto' src='{{hospitalPhoto}}'></image>
+  </view>
+  <view class='hospital_floor' wx:for="{{floorData}}" wx:for-item="item" wx:for-index="idx">
+    <view class='floor_number'>
+      <text bindtap='floorNumber' data-name="{{item.HOSPITAL_FLOOR_DEPT}}" data-index="{{item}}" class='floor'>{{item.HOSPITAL_FLOOR_NUMBER}}</text>
+    </view>
+    <view class='build_number'>
+      <text data-index="{{item}}" class='floor'>{{item.HOSPITAL_BUILD_NUMBER}}</text>
+    </view>
+  </view>
+</view>
+
+<view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+ 
+<view bindtap="go" class="modalDlg" wx:if="{{showModal}}">
+    <view>
+      <text>{{deptName}}</text>
+    </view>
+</view>
+ 

@@ -1,0 +1,54 @@
+<view class="mainview" style="{{isShowToast?'position:fixed;':''}}">
+  <view class="content">
+    <label class="toplabel">确认授权以获取基本信息</label>
+    <view class='from'>
+      <text class="information">快速注册需要提供你的姓名、手机号码、身份证号等基本信息，通过以下授权步骤可快速获取基本信息</text>
+  
+      <view class='module'>
+        <view class='tr'>
+        <view class='td1'>
+          <view wx:if="{{!getphone}}" class="label_icon">
+          <view  class="label_icon-checked"></view>
+          </view> 
+          <i wx:if="{{getphone}}" class="icon-current-state  labeli"></i>
+          <text class="textlabel">手机号码</text>
+          <view class="{{getphone ?'line-green':'line-gary'}}">
+          </view> 
+          </view>
+          <view class='td2'>
+          <text class='textcont'> 申请获取你微信绑定的手机号</text>
+          <text class='textcont'>{{userphonenum}}</text>
+          </view>
+        </view>
+        <view class='tr'>
+        <view class='td1'>
+         <view wx:if="{{!getidNo && !getphone}}" class='label_icon-unchecked'></view>
+          <view wx:if="{{getphone && !getidNo}}" class="label_icon">
+            <view class="label_icon-checked"></view>
+          </view>
+          <i wx:if="{{getphone && getidNo}}" class="icon-current-state  labeli"></i>
+         <text class="textlabel">身份信息</text>
+        <view class="{{getidNo ?'line-green':'line-gary'}}">
+        </view>
+        </view>
+         <text class='td2 textcont'>申请获取你微信支付绑定的姓名和身份证号</text>
+        </view>
+        <view class='tr'>
+        <view class='td1'>
+
+         <view wx:if="{{!confirm}}" class='label_icon-unchecked'></view>
+          <view wx:if="{{confirm}}" class="label_icon">
+            <view class="label_icon-checked"></view>
+          </view>
+         <text class="textlabel">授权完成</text>
+      
+         </view>
+         <text class="td2 textcont">授权完成</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <button wx:if="{{!getphone}}" type='primary' class="btn" open-type='getPhoneNumber' bindgetphonenumber='getPhoneNumber'>授权手机号码</button>
+  <button wx:if="{{getphone&&!getidNo}}" type='primary' class="btn" open-type="getRealnameAuthInfo" bindgetrealnameauthinfo="authinfo" category-id="{{[firstID, secondID]}}">授权身份信息</button>
+  <button wx:if="{{confirm}}"class="btn"   bindtap= "finishauthority">完成</button>
+</view>

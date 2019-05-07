@@ -1,0 +1,36 @@
+/* pages/verify/verify.wxss */
+/* .mainview{
+  background-color: #F8F8F8;
+} */
+.authorization_info{
+  background-color: #F8F8F8;
+  margin-top: 10px;
+  width: 100%;
+  height: 318px;
+}
+.authorization_phone{
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background: #00C177;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.phone_text{
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.base_info{
+  font-size: 17px;
+  color: #0B1611;
+}
+.query_dic{
+  font-size: 14px;
+  color: #5D6D66;
+}

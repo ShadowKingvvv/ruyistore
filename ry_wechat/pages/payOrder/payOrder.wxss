@@ -1,0 +1,76 @@
+/* pages/payOrder/payOrder.wxss */
+/* pages/appointResult/appointResult.wxss */
+
+.mar_t_5 {
+  margin-left: 10rpx;
+  margin-top: 10rpx;
+  margin-right: 10rpx;
+}
+
+.border_green {
+  border-top: 3px solid #00c177;
+}
+
+.f_50 {
+  font-size: 100rpx;
+}
+
+.pad_t_30 {
+  padding-top: 60rpx;
+}
+
+.pad_b_30 {
+  padding-bottom: 60rpx;
+}
+
+.pos_f {
+  position: relative;
+}
+
+.left_circle {
+  height: 14px;
+  width: 14px;
+  border-radius: 100%;
+  background-color: #edf0f7;
+  position: absolute;
+  left:-7px;
+
+}
+
+.right_circle {
+  height: 14px;
+  width: 14px;
+  border-radius: 100%;
+  background-color: #edf0f7;
+  position: absolute;
+  right: -7px;
+}
+
+.mar_l_34 {
+  margin-left: 34px;
+}
+.line_h_44{
+  height: 88rpx;
+  line-height: 88rpx
+}
+.min_width{
+  width:56px;
+min-width:56px
+}
+.bottom_14{
+bottom: 28rpx
+}
+.mar_b_56{
+ margin-bottom: 120rpx;
+}
+.linh_65{
+  height: 130rpx;
+  line-height: 130rpx
+}
+.pay_height{
+  height:50px;
+line-height:50px;
+margin-top:10px;
+
+}
+
