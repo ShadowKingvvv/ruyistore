@@ -1,0 +1,13 @@
+server:
+  port: 8081
+  context-path: /api/
+
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/shop
+    username: root
+    password: root
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
