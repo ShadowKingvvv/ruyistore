@@ -5,6 +5,23 @@ var util = require("/../../utils/util.js");
 const app = getApp()
 
 Page({
+  /**
+ * 页面的初始数据
+ */
+  data: {
+    // banner
+    banner:{
+      imgUrls: [
+        '../../resources/image/card_manage_blue.png',
+        '../../resources/image/card_manage_green.png',
+        '../../resources/image/card_manage_orange.png'
+      ],
+      indicatorDots: true, //是否显示面板指示点
+      autoplay: true, //是否自动切换
+      interval: 3000, //自动切换时间间隔,3s
+      duration: 1000, //  滑动动画时长1s
+    }
+  },
   selectHospitalTap:function(){
     wx.showToast({
       title: "该功能暂未开通",

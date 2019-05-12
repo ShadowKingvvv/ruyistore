@@ -3,7 +3,12 @@
 <template is="tabBar" data="{{tabBar:bindData.tabBar}}"/>
 <view class="mainview">
   <view>
-    <image class='hospitalimg' src='../../resources/images/hospitalimg.jpg'></image>
+    <swiper indicator-dots="{{banner.indicatorDots}}" autoplay="{{banner.autoplay}}" 
+      interval="{{banner.interval}}" vertical="{{banner.isVertical}}" duration="{{banner.duration}}" circular='false'>
+      <swiper-item wx:for="{{banner.imgUrls}}">
+        <image src="{{item}}" class="slide-image"/>
+      </swiper-item>
+    </swiper>
     <view class='navigation'>
      <view bindtap='goHospitalIntroduce' class='hospital_introduce'>
       <image class='introduceimg' src='../../resources/images/introduce.png'></image>

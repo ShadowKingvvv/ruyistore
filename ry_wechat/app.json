@@ -10,9 +10,9 @@
     "pages/goods/goods"
   ],
   "window": {
+    "navigationBarBackgroundColor": "#97845e",
     "backgroundcolor":"#fafafa",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fafafa",
     "navigationBarTitleText": "如意商城",
     "navigationBarTextStyle": "black",
     "enablePullDownRefresh":false

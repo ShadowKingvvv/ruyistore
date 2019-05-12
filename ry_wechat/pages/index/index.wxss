@@ -166,3 +166,7 @@
 .bag-main{
   background: #edf0f7;
 }
+.slide-image{
+  height: 100%;
+  width: 100%;
+}
