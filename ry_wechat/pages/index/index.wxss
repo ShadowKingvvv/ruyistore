@@ -1,165 +1,38 @@
 /**index.wxss**/
 .mainview{
-  background:#edf0f7;
+  background:#FFFFFF;
   max-width: 100vm;
   min-height: 100vh;
    overflow-x: hidden;
 }
- .hospitalimg{
-  /* padding-top: 4rpx; */
-  width: 100%;
-  height: 368rpx;
+.dis_block{
+  display: block;
 }
-.clinic_head{
-  height: 80rpx;
-  line-height:54rpx;
-  width: 100%;
-  padding-left: 40rpx;
-  display: flex;
+.yqxz {
+    overflow-x: auto;
+    height: 180rpx;
+    white-space: nowrap;
+    font-family: Monaco; 
+    font-size: 9pt;
 }
-.clinic_image{
-  display: flex;
-  margin-top:12rpx;
+.tab {
+    display: inline-block;
+    height: 156rpx;
+    border-bottom: 4rpx solid transparent;
+    width: 25%;
+    text-align:center;
 }
-.clinic_text{
-  margin-left: 28rpx;
-  display: flex;
-  margin-top:12rpx;
+.tab.focus {
+    border-bottom-color: #16cc80;
 }
+
+
+
+ 
 .border-b{
   border-bottom:solid thin #e0e5e0;
 }
-.clinic_layout{
-  height: 124rpx;
-  width: 100%;
-  margin-left: 40rpx;
-  display: flex;
-}
-.text_layout{
-  margin-left: 24rpx;
-  display: flex;
-  flex-direction: column;
-}
-.image_layout{
-  display: flex;
-  align-items: center;
-}
-.text_head{
-  font-size: 32rpx;
-  margin-top: 18rpx;
-  color: #0B1611;
-}
-.text_content{
-  font-size: 26rpx;
-  margin-top: 10rpx;
-  color: #99A6A0;
-}
-.text{
-  font-size: 28rpx;
-}
-.navigation{
-  display:flex;
-  position:absolute;
-  width:100%;
-  top:252rpx;
-  background:rgba(0,0,0,0.6);
-  height:116rpx;
-  color:#F8F8F8;
-}
-.hospital_introduce{
-  width: 25%;
-  text-align:center;
-  padding-top:12rpx;
-}
-.dip_block{
-  display:block;
-}
-.hospital_navigation{
-  width: 25%;
-  text-align:center;
-  padding-top:12rpx;
-}
-.guideline{
-  width: 25%;
-  text-align:center;
-  padding-top:12rpx;
-}
-.dept{
-   width: 25%;
-  text-align:center;
-  padding-top:12rpx;
-}
-.introduceimg{
-  width: 25%;
-  height: 46rpx;
-}
-.guidelineimg{
-  width: 25%;
-  height: 46rpx;
-}
-.navigationimg{
-  width: 25%;
-  height: 46rpx;
-}
-.guideline{
-  width: 25%;
-}
-.dept{
-  width: 25%;
-}
-.clinic_business{
-  width:100%;
-  height:578rpx;
-  background:#FFFFFF;
-  margin-top:12rpx;
-}
-.clinicServiceimg{
-  width: 66rpx;
-  height: 54rpx;
-  margin-left: 10rpx;
-}
-.clinic_service{
-  color: #00C177;
-  font-size: 28rpx;
-}
-.imageType{
-  width: 80rpx;
-  height: 80rpx;
-}
-.hospitalization{
-  width: 100%;
-  height: 332rpx;
-  margin-top: 20rpx;
-  background: #FFFFFF;
-}
-.hopital_service{
-  width: 64rpx;
-  height: 54rpx;
-  margin-left:10rpx;
-}
-.hospitalization_head{
-  padding-left: 40rpx;
-  height: 80rpx;
-  display: flex;
-}
-.hospitalization_text{
-  margin-left: 28rpx;
-  display: flex;
-  align-items: center;
-}
-.hospitalization_dic{
-  font-size: 28rpx;
-  color: #279AFF;
-}
-.hospitalization_layout{
-  margin-left: 40rpx;
-  height: 124rpx;
-  display: flex;
-}
-.hospitalization_image{
-  display: flex;
-  align-items: center;
-}
+
 .height_10{
   height: 20rpx;
 } 

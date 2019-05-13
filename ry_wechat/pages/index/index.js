@@ -12,15 +12,49 @@ Page({
     // banner
     banner:{
       imgUrls: [
-        '../../resources/image/card_manage_blue.png',
-        '../../resources/image/card_manage_green.png',
-        '../../resources/image/card_manage_orange.png'
+        '../../resources/image/banner-1.png',
+        '../../resources/image/banner-2.png'
       ],
       indicatorDots: true, //是否显示面板指示点
       autoplay: true, //是否自动切换
       interval: 3000, //自动切换时间间隔,3s
-      duration: 1000, //  滑动动画时长1s
+      duration: 1000 //  滑动动画时长1s
+    },
+    Height: '',
+    oIndex: 0,
+    left: 0,
+    product_list: [
+      { image: '../../resources/image/home.png', text:'东院'},
+      { image: '../../resources/image/home1.png', text: '西院' },
+      { image: '../../resources/image/cart.png', text: '南院' },
+      { image: '../../resources/image/cart1.png', text: '北院' },
+      { image: '../../resources/image/me.png', text: '中院' }]
+  },
+  imgHeight: function (e) {
+      var winWid = wx.getSystemInfoSync().windowWidth; //获取当前屏幕的宽度
+      var imgh = e.detail.height;//图片高度
+      var imgw = e.detail.width;//图片宽度
+      var swiperH = winWid * imgh / imgw + "px !important";
+      //等比设置swiper的高度。 即 屏幕宽度 / swiper高度 = 图片宽度 / 图片高度  ==》swiper高度 = 屏幕宽度 * 图片高度 / 图片宽度
+      this.setData({
+        Height: swiperH //设置高度
+      })
+  },
+  switchTab: function (e) {
+    var oIndex = e.currentTarget.dataset.index;
+    var oLeft = e.currentTarget.offsetLeft;
+    if (oLeft == 327) {
+      this.setData({
+        left: 327,
+      })
+    } else if (oLeft == 0) {
+      this.setData({
+        left: 0,
+      })
     }
+    this.setData({
+      oIndex: oIndex
+    })
   },
   selectHospitalTap:function(){
     wx.showToast({
