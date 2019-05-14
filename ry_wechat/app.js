@@ -50,7 +50,7 @@ App({
     //wechatServerUrl: "https://weixin.quyiyuan.com/publicservice/",
 
     //测试环境
-    //wechatServerUrl: "http://139.129.231.111:8080/publicservice-1.0.10/",
+    wechatServerUrl: "http://127.0.0.1:8080/RYProject/",
 
     version: "2.5.30",
 

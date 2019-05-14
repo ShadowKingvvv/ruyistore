@@ -2,33 +2,47 @@
 <import src="../../template/template.wxml"/>
 <template is="tabBar" data="{{tabBar:bindData.tabBar}}"/>
 <view class="mainview">
-  <view>
-    <swiper indicator-dots="{{banner.indicatorDots}}" autoplay="{{banner.autoplay}}"  style='height:{{Height}}'
-      interval="{{banner.interval}}" vertical="{{banner.isVertical}}" duration="{{banner.duration}}" circular='false'>
-      <swiper-item wx:for="{{banner.imgUrls}}">
-        <image src="{{item}}" class="slide-image"  bindload='imgHeight'/>
-      </swiper-item>
-    </swiper>
+<view class='title_tip'>
+  <view class='flex' >
+    <view class="iconfont  icon-fenlei- title-feilei"></view>
+    <view class="div-input-pre">
+      <input placeholder="搜素你想要的商品" bindtap="searchProject"/>
+    </view>
   </view>
-  <view style='height:100px;'>
-      <scroll-view scroll-x class='yqxz' style="width: 100%" scroll-left="{{left}}" scroll-with-animation>
-        <view class="tab {{oIndex==index?'focus':' '}}" wx:for-index="index" data-index='{{index}}' 
-         wx:for='{{product_list }}'  bindtap="switchTab">
-            <image class='' src='{{item.image }}' style='width:46px;height:46px;margin-top:20rpx;margin-bottom:10rpx'></image>
-            <text class='dis_block'>{{item.text}}</text>
-        </view>
-      </scroll-view>
+  <view class='flex'>
+      <view class='title_tip_style border-r'>发现</view>
+      <view class='title_tip_style'>拍卖</view>
   </view>
+</view>
 
-  <view>
-    <view style='height:50px;margin:0 auto;line-height:50px;text-align:center;font-family:"黑体";font-size:18px;'>
-      <text>为您优选</text>
+  <view class='mar-t-66'>
+    <view>
+      <swiper indicator-dots="{{banner.indicatorDots}}" autoplay="{{banner.autoplay}}"  style='height:{{Height}}'
+        interval="{{banner.interval}}" vertical="{{banner.isVertical}}" duration="{{banner.duration}}" circular='false'>
+        <swiper-item wx:for="{{banner.imgUrls}}">
+          <image src="{{item}}" class="slide-image"  bindload='imgHeight'/>
+        </swiper-item>
+      </swiper>
     </view>
     <view>
-      <view></view>
-      <view></view>
+        <scroll-view scroll-x class='yqxz' style="width: 100%" scroll-left="{{left}}" scroll-with-animation>
+          <view class="tab {{oIndex==index?'focus':' '}}" wx:for-index="index" data-index='{{index}}' 
+          wx:for='{{product_list }}'  bindtap="switchTab">
+              <view class="iconfont  {{item.iconfont}}" style='color:{{item.color}}'></view>
+              <text class='dis_block mar-t-10'>{{item.text}}</text>
+          </view>
+        </scroll-view>
     </view>
-  </view>
-  <view class='height_10 bag-main'>
+    <view class='height_10 bag-main'>
+    </view>
+    <view>
+      <view style='height:50px;margin:0 auto;line-height:50px;text-align:center;font-size:18px;'>
+        <text>为您优选</text>
+      </view>
+      <view>
+        <view></view>
+        <view></view>
+      </view>
+    </view>
   </view>
 </view>

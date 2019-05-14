@@ -2,7 +2,7 @@
 <view class='mainview'>
   <view class='user_ground'></view>
   <view class='user_photo_border'>
-    <image wx:if="{{!hasPateient}}" class='user_photo' src='../../resources/images/person_center.png'></image>
+    <image wx:if="{{!hasPateient}}" class='user_photo' src='../../resources/image/head-photo.png'></image>
     <image wx:if="{{hasPateient}}" class='user_photo' src='{{curentPatientData.uesrImgdef}}'></image>
   </view>
   <view class='patient_info'>
@@ -13,59 +13,33 @@
       <view bindtap='verified' class='real_layout'>
         <text class='real_name'>实名认证</text>
       </view>
+      
     </view>
-     <view wx:if="{{hasPateient}}" class='text_layout'>
-      <view class='patient_into'>
-        <view class='patient_name'>{{curentPatientData.OFTEN_NAME}}</view>
-        <view class='patient_text'>{{curentPatientData.phoneShow}}</view>
-        <view class='patient_text'>{{curentPatientData.idNoShow}}</view>
-      </view>
-      <view bindtap='queryPatient' class='switch_user'>
-          <text class='icon icon-conversion'></text>
-          <text class='mar-l-5'>切换就诊者</text>
-        </view>
-    </view>
-    <view class='user_info'>
-      <view class='info_layout' bindtap='userInfo'>
-        <!--<image class='userimg' src='../../resources/images/register.png'></image>-->
-        <text class="icon-news"> </text>
-        <text class='info_text'>消息</text>
-      </view>
-      <view class='doctor_layout' bindtap='userAttentDoctor'>
-        <text class="icon-star"> </text>
-        <text class='info_text'>关注的医生</text>
-      </view>
-    </view>
+    
   </view>
   <view class='user_service'>
-    <view class='service_layout'>
-      <text class="icon-card2 service_layout_img qy_imgcolor"></text>
-      <view class='service_text border-b' bindtap='goCardManage'>
-        <text class='text_style'>我的就诊卡</text>
-      </view>
-    </view>
-     <view class='service_layout'>
-      <text class="icon-tingzhen service_layout_img qy-newbule"></text>
-      <view class='service_text border-b'bindtap='appointmentList'>
-        <text class='text_style'>预约挂号记录</text>
-      </view>
-    </view>
-     <view class='service_layout' bindtap='noOpenFun'>
-      <text class="icon-doctor_introduced service_layout_img qy-green"></text>
+    <view class='service_layout'bindtap='noOpenFun'>
+      <text class="iconfont icon-weifukuan- service_layout_img qy-red"></text>
       <view class='service_text border-b'>
-        <text class='text_style'>门诊缴费记录</text>
+        <text class='text_style'>未付款</text>
       </view>
     </view>
-     <view class='service_layout'bindtap='noOpenFun'>
-      <text class="icon-hospital-expenses service_layout_img qy-orange"></text>
+    <view class='service_layout'bindtap='noOpenFun'>
+      <text class="iconfont icon-weishoucang- service_layout_img qy-orange"></text>
       <view class='service_text border-b'>
-        <text class='text_style'>住院预交记录</text>
+        <text class='text_style'>我的收藏</text>
       </view>
     </view>
-     <view class='service_layout'bindtap='noOpenFun'>
-      <text class="icon-prescription service_layout_img qy_imgcolor"></text>
-      <view class='service_text'>
-        <text class='text_style'>住院每日清单</text>
+    <view class='service_layout'bindtap='noOpenFun'>
+      <text class="iconfont icon-kuaidi- service_layout_img qy-newbule"></text>
+      <view class='service_text border-b'>
+        <text class='text_style'>待收货</text>
+      </view>
+    </view>
+    <view class='service_layout'bindtap='noOpenFun'>
+      <text class="iconfont icon-wode- service_layout_img qy_bluegreen"></text>
+      <view class='service_text border-b'>
+        <text class='text_style'>个人信息</text>
       </view>
     </view>
   </view>

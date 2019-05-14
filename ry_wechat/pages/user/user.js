@@ -71,7 +71,7 @@ Page({
   verified: function() {
     wx.showModal({
       title: '实名认证',
-      content: '就医前请先实名认证，实名认证后可以进行预约挂号，就诊卡充值，门诊缴费等一系列就医服务',
+      content: '请先实名认证，已确保您能购买到合适的商品',
       success: function(res) {
         if (res.confirm) {
           wx.navigateTo({

@@ -24,11 +24,11 @@ Page({
     oIndex: 0,
     left: 0,
     product_list: [
-      { image: '../../resources/image/home.png', text:'东院'},
-      { image: '../../resources/image/home1.png', text: '西院' },
-      { image: '../../resources/image/cart.png', text: '南院' },
-      { image: '../../resources/image/cart1.png', text: '北院' },
-      { image: '../../resources/image/me.png', text: '中院' }]
+      { iconfont: 'icon-shouye-', text: '首页', color:'#1fa7a8'},
+      { iconfont: 'icon-zhubao', text: '珠宝', color: '#fbe433'},
+      { iconfont: 'icon-bowlder-2', text: '玉石', color: '#1eba84'},
+      { iconfont: 'icon-weishoucang-', text: '收藏', color: '#d85052' },
+      { iconfont: 'icon-fenlei-', text: '分类', color: '#1afa29'}]
   },
   imgHeight: function (e) {
       var winWid = wx.getSystemInfoSync().windowWidth; //获取当前屏幕的宽度
@@ -55,6 +55,11 @@ Page({
     this.setData({
       oIndex: oIndex
     })
+  },
+  searchProject:function(){
+    wx.navigateTo({
+      url: '../searchProject/searchProject',
+    });
   },
   selectHospitalTap:function(){
     wx.showToast({

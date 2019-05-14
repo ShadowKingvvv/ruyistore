@@ -10,24 +10,30 @@
 }
 .yqxz {
     overflow-x: auto;
-    height: 180rpx;
     white-space: nowrap;
     font-family: Monaco; 
     font-size: 9pt;
 }
 .tab {
-    display: inline-block;
-    height: 156rpx;
-    border-bottom: 4rpx solid transparent;
-    width: 25%;
+    display:inline-block;
+    border-bottom:4rpx solid transparent;
+    width:20%;
     text-align:center;
+    padding:10px 0;
+}
+.mar-t-10{
+  margin-top: 10px;
 }
 .tab.focus {
     border-bottom-color: #16cc80;
 }
-
-
-
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 32px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
  
 .border-b{
   border-bottom:solid thin #e0e5e0;
@@ -42,4 +48,45 @@
 .slide-image{
   height: 100%;
   width: 100%;
+}
+.title_tip{
+  position:absolute;
+  height:66px;
+  top:0px;
+  width:100%;
+  z-index:9999;
+  background:#06c1ae;
+  opacity:0.7;
+}
+.border-r{
+  border-right: 1px solid #ffffff;
+}
+.title_tip_style{
+  width:50%;
+  text-align:center;
+  color:#ffffff;
+  font-size:16px;
+}
+.mar-t-66{
+  margin-top: 66px;
+}
+.title-feilei{
+  color:#ffffff;
+  font-size:24px;
+  margin-inline-start: 10px;
+  margin-top:5px;
+  margin-bottom:5px;
+  width:6%;
+}
+.div-input-pre{
+  margin-left: 2%;
+  width:85%;
+  background:#fafafa;
+  border-radius:6px;
+  font-size:14px;
+  padding-left:6px;
+  height:24px;
+  line-height:16px;
+  opacity:0.9;
+  color:black;
 }
