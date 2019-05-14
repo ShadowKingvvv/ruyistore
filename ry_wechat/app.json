@@ -7,10 +7,11 @@
     "pages/news/news",
     "pages/authority/authority",
     "pages/payOrder/payOrder",
-    "pages/goods/goods"
+    "pages/goods/goods",
+    "pages/searchProject/searchProject"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#97845e",
+    "navigationBarBackgroundColor": "#06c1ae",
     "backgroundcolor":"#fafafa",
     "backgroundTextStyle": "light",
     "navigationBarTitleText": "如意商城",

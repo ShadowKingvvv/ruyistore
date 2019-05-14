@@ -5,8 +5,8 @@
 <view class='title_tip'>
   <view class='flex' >
     <view class="iconfont  icon-fenlei- title-feilei"></view>
-    <view class="div-input-pre">
-      <input placeholder="搜素你想要的商品" bindtap="searchProject"/>
+    <view class="div-input-pre" bindtap="searchProject">
+      <text>搜素你想要的商品</text>
     </view>
   </view>
   <view class='flex'>

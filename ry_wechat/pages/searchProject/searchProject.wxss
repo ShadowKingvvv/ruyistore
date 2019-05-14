@@ -1,0 +1,35 @@
+/* pages/searchProject/searchProject.wxss */
+.mainview{
+  background:#FFFFFF;
+  max-width: 100vm;
+  min-height: 100vh;
+   overflow-x: hidden;
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 32px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.div-input-pre{
+  width:80%;
+  background:#fafafa;
+  border-radius:6px;
+  font-size:14px;
+  padding-left:6px;
+  height:26px;
+  line-height:26px;
+  color:black;
+  margin-right:2%;
+}
+.button{
+  font-size:16px;
+  padding:0 10px;
+  text-align:center;
+  background:#85f6e7;
+  border-radius:4px;
+  height:24px;
+  line-height:24px;
+  width:10%;
+}

@@ -79,14 +79,12 @@
   width:6%;
 }
 .div-input-pre{
-  margin-left: 2%;
+  margin-left:2%;
   width:85%;
   background:#fafafa;
   border-radius:6px;
   font-size:14px;
   padding-left:6px;
-  height:24px;
-  line-height:16px;
-  opacity:0.9;
-  color:black;
+  height:26px;
+  line-height:26px;
 }
